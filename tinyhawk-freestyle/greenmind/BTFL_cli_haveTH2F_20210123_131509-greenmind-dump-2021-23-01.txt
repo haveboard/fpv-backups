@@ -1,4 +1,4 @@
-dump
+DUMP
 ###WARNING: NO CUSTOM DEFAULTS FOUND###
 
 # version
@@ -291,7 +291,7 @@ beacon -RX_LOST
 beacon RX_SET
 
 # map
-map EART1234
+map TAER1234
 
 # serial
 serial 20 1 115200 57600 0 115200
@@ -531,9 +531,9 @@ set dyn_lpf_gyro_max_hz = 650
 set gyro_filter_debug_axis = ROLL
 set acc_hardware = AUTO
 set acc_lpf_hz = 10
-set acc_trim_pitch = 0
-set acc_trim_roll = 12
-set acc_calibration = -18,5,17
+set acc_trim_pitch = -8
+set acc_trim_roll = -4
+set acc_calibration = -26,-9,-7
 set align_mag = DEFAULT
 set mag_align_roll = 0
 set mag_align_pitch = 0
@@ -627,7 +627,7 @@ set gimbal_mode = NORMAL
 set bat_capacity = 0
 set vbat_max_cell_voltage = 440
 set vbat_full_cell_voltage = 410
-set vbat_min_cell_voltage = 320
+set vbat_min_cell_voltage = 300
 set vbat_warning_cell_voltage = 330
 set vbat_hysteresis = 1
 set current_meter = NONE
@@ -764,7 +764,7 @@ set osd_warn_arming_disable = ON
 set osd_warn_batt_not_full = OFF
 set osd_warn_batt_warning = ON
 set osd_warn_batt_critical = ON
-set osd_warn_visual_beeper = OFF
+set osd_warn_visual_beeper = ON
 set osd_warn_crash_flip = ON
 set osd_warn_esc_fail = ON
 set osd_warn_core_temp = OFF
@@ -789,19 +789,19 @@ set osd_ah_max_rol = 40
 set osd_ah_invert = OFF
 set osd_tim1 = 2560
 set osd_tim2 = 2561
-set osd_vbat_pos = 2455
-set osd_rssi_pos = 2432
-set osd_link_quality_pos = 234
+set osd_vbat_pos = 2048
+set osd_rssi_pos = 2075
+set osd_link_quality_pos = 25
 set osd_rssi_dbm_pos = 234
 set osd_tim_1_pos = 234
-set osd_tim_2_pos = 2072
+set osd_tim_2_pos = 24
 set osd_remaining_time_estimate_pos = 234
-set osd_flymode_pos = 2048
+set osd_flymode_pos = 2458
 set osd_anti_gravity_pos = 234
 set osd_g_force_pos = 234
 set osd_throttle_pos = 234
-set osd_vtx_channel_pos = 2435
-set osd_crosshairs_pos = 205
+set osd_vtx_channel_pos = 2432
+set osd_crosshairs_pos = 2253
 set osd_ah_sbar_pos = 206
 set osd_ah_pos = 78
 set osd_current_pos = 234
@@ -837,7 +837,7 @@ set osd_esc_rpm_pos = 234
 set osd_esc_rpm_freq_pos = 234
 set osd_rtc_date_time_pos = 234
 set osd_adjustment_range_pos = 234
-set osd_flip_arrow_pos = 310
+set osd_flip_arrow_pos = 2318
 set osd_core_temp_pos = 234
 set osd_log_status_pos = 234
 set osd_stick_overlay_left_pos = 234
@@ -846,10 +846,10 @@ set osd_stick_overlay_radio_mode = 2
 set osd_rate_profile_name_pos = 23
 set osd_pid_profile_name_pos = 2
 set osd_profile_name_pos = 234
-set osd_stat_rtc_date_time = OFF
+set osd_stat_rtc_date_time = ON
 set osd_stat_tim_1 = OFF
-set osd_stat_tim_2 = ON
-set osd_stat_max_spd = OFF
+set osd_stat_tim_2 = OFF
+set osd_stat_max_spd = ON
 set osd_stat_max_dist = OFF
 set osd_stat_min_batt = ON
 set osd_stat_endbatt = ON
@@ -906,9 +906,9 @@ set displayport_max7456_wht = 2
 set esc_sensor_halfduplex = OFF
 set esc_sensor_current_offset = 0
 set frsky_spi_autobind = OFF
-set frsky_spi_tx_id = 214,117
-set frsky_spi_offset = -7
-set frsky_spi_bind_hop_data = 1,186,136,86,36,223,171,121,71,21,206,156,106,56,6,191,141,93,41,226,178,126,76,26,211,161,111,61,11,196,146,96,48,231,181,131,81,31,216,166,116,66,16,201,151,101,51,0,0,0
+set frsky_spi_tx_id = 70,92
+set frsky_spi_offset = -32
+set frsky_spi_bind_hop_data = 2,127,17,142,32,157,49,172,62,187,77,202,92,217,107,232,122,12,137,27,152,42,167,57,182,72,197,87,212,102,227,117,7,132,22,147,37,162,52,179,67,192,82,207,97,222,112,0,0,0
 set frsky_x_rx_num = 0
 set frsky_spi_a1_source = VBAT
 set cc2500_spi_chip_detect = OFF
@@ -972,9 +972,9 @@ set name = haveTH2F
 set display_name = -
 set position_alt_source = DEFAULT
 
-profile 1
+profile 2
 
-# profile 1
+# profile 2
 set profile_name = -
 set dyn_lpf_dterm_min_hz = 70
 set dyn_lpf_dterm_max_hz = 170
@@ -1062,27 +1062,27 @@ set idle_p = 50
 set idle_pid_limit = 200
 set idle_max_increase = 150
 
-rateprofile 0
+rateprofile 1
 
-# rateprofile 0
+# rateprofile 1
 set rateprofile_name = -
-set thr_mid = 50
+set thr_mid = 20
 set thr_expo = 50
 set rates_type = BETAFLIGHT
-set roll_rc_rate = 70
-set pitch_rc_rate = 70
-set yaw_rc_rate = 70
-set roll_expo = 69
-set pitch_expo = 69
+set roll_rc_rate = 80
+set pitch_rc_rate = 80
+set yaw_rc_rate = 80
+set roll_expo = 60
+set pitch_expo = 60
 set yaw_expo = 20
-set roll_srate = 83
-set pitch_srate = 83
-set yaw_srate = 83
-set tpa_rate = 25
-set tpa_breakpoint = 1650
+set roll_srate = 60
+set pitch_srate = 60
+set yaw_srate = 60
+set tpa_rate = 45
+set tpa_breakpoint = 1450
 set tpa_mode = D
-set throttle_limit_type = OFF
-set throttle_limit_percent = 100
+set throttle_limit_type = SCALE
+set throttle_limit_percent = 75
 set roll_rate_limit = 1998
 set pitch_rate_limit = 1998
 set yaw_rate_limit = 1998

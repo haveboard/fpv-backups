@@ -1,6 +1,4 @@
-# 
-
-# diff
+diff
 ###WARNING: NO CUSTOM DEFAULTS FOUND###
 
 # version
@@ -120,7 +118,7 @@ beeper -RC_SMOOTHING_INIT_FAIL
 beacon RX_SET
 
 # map
-map EART1234
+map TAER1234
 
 # serial
 serial 1 2048 115200 57600 0 115200
@@ -149,8 +147,9 @@ vtxtable powerlabels 25 100 200
 set gyro_lowpass2_hz = 325
 set dyn_lpf_gyro_min_hz = 260
 set dyn_lpf_gyro_max_hz = 650
-set acc_trim_roll = 12
-set acc_calibration = -18,5,17
+set acc_trim_pitch = 4
+set acc_trim_roll = 8
+set acc_calibration = -28,-6,-7
 set mag_hardware = NONE
 set baro_hardware = NONE
 set max_check = 2000
@@ -163,7 +162,7 @@ set dshot_burst = AUTO
 set motor_pwm_protocol = DSHOT600
 set motor_poles = 12
 set vbat_max_cell_voltage = 440
-set vbat_min_cell_voltage = 320
+set vbat_min_cell_voltage = 300
 set vbat_warning_cell_voltage = 330
 set current_meter = NONE
 set battery_meter = ADC
@@ -175,18 +174,19 @@ set deadband = 1
 set yaw_deadband = 1
 set pid_process_denom = 1
 set osd_warn_batt_not_full = OFF
-set osd_warn_visual_beeper = OFF
 set osd_warn_core_temp = OFF
 set osd_warn_rc_smoothing = OFF
 set osd_warn_no_gps_rescue = OFF
 set osd_warn_gps_rescue_disabled = OFF
 set osd_warn_rssi = ON
 set osd_cap_alarm = 450
-set osd_vbat_pos = 2455
-set osd_rssi_pos = 2432
-set osd_tim_2_pos = 2072
-set osd_flymode_pos = 2048
-set osd_vtx_channel_pos = 2435
+set osd_vbat_pos = 2048
+set osd_rssi_pos = 2075
+set osd_link_quality_pos = 25
+set osd_tim_2_pos = 24
+set osd_flymode_pos = 2458
+set osd_vtx_channel_pos = 2432
+set osd_crosshairs_pos = 2253
 set osd_mah_drawn_pos = 0
 set osd_craft_name_pos = 2443
 set osd_display_name_pos = 394
@@ -195,10 +195,11 @@ set osd_pid_pitch_pos = 34
 set osd_pidrate_profile_pos = 186
 set osd_warnings_pos = 2377
 set osd_avg_cell_voltage_pos = 374
-set osd_flip_arrow_pos = 310
+set osd_flip_arrow_pos = 2318
 set osd_rate_profile_name_pos = 23
 set osd_pid_profile_name_pos = 2
-set osd_stat_max_spd = OFF
+set osd_stat_rtc_date_time = ON
+set osd_stat_tim_2 = OFF
 set osd_stat_endbatt = ON
 set osd_stat_battery = ON
 set osd_stat_max_alt = ON
@@ -207,15 +208,15 @@ set osd_stat_bb_no = OFF
 set osd_stat_total_time = ON
 set system_hse_mhz = 8
 set vtx_band = 5
-set vtx_channel = 4
+set vtx_channel = 3
 set vtx_power = 3
 set vtx_low_power_disarm = UNTIL_FIRST_ARM
-set vtx_freq = 5769
+set vtx_freq = 5732
 set vcd_video_system = NTSC
 set max7456_spi_bus = 2
-set frsky_spi_tx_id = 214,117
-set frsky_spi_offset = -7
-set frsky_spi_bind_hop_data = 1,186,136,86,36,223,171,121,71,21,206,156,106,56,6,191,141,93,41,226,178,126,76,26,211,161,111,61,11,196,146,96,48,231,181,131,81,31,216,166,116,66,16,201,151,101,51,0,0,0
+set frsky_spi_tx_id = 70,92
+set frsky_spi_offset = -32
+set frsky_spi_bind_hop_data = 2,127,17,142,32,157,49,172,62,187,77,202,92,217,107,232,122,12,137,27,152,42,167,57,182,72,197,87,212,102,227,117,7,132,22,147,37,162,52,179,67,192,82,207,97,222,112,0,0,0
 set cc2500_spi_chip_detect = OFF
 set gyro_1_bustype = SPI
 set gyro_1_spibus = 1
@@ -224,23 +225,26 @@ set gyro_1_align_yaw = 2700
 set gyro_2_spibus = 1
 set name = haveTH2F
 
-profile 1
+profile 2
 
-rateprofile 0
+rateprofile 1
 
-# rateprofile 0
+# rateprofile 1
+set thr_mid = 20
 set thr_expo = 50
-set roll_rc_rate = 70
-set pitch_rc_rate = 70
-set yaw_rc_rate = 70
-set roll_expo = 69
-set pitch_expo = 69
+set roll_rc_rate = 80
+set pitch_rc_rate = 80
+set yaw_rc_rate = 80
+set roll_expo = 60
+set pitch_expo = 60
 set yaw_expo = 20
-set roll_srate = 83
-set pitch_srate = 83
-set yaw_srate = 83
-set tpa_rate = 25
-set tpa_breakpoint = 1650
+set roll_srate = 60
+set pitch_srate = 60
+set yaw_srate = 60
+set tpa_rate = 45
+set tpa_breakpoint = 1450
+set throttle_limit_type = SCALE
+set throttle_limit_percent = 75
 
 # end the command batch
 batch end
