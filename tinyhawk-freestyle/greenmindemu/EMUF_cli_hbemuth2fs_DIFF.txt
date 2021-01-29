@@ -1,4 +1,4 @@
-DIFF
+diff
 
 # version
 # EmuFlight / MATEKF411RX (M41R) 0.3.3 Jan 10 2021 / 18:47:26 (467b20241) MSP API: 1.50
@@ -93,6 +93,9 @@ set osd_vtx_channel_pos = 2432
 set osd_crosshairs_pos = 2253
 set osd_craft_name_pos = 2442
 set osd_avg_cell_voltage_pos = 2080
+set vtx_band = 1
+set vtx_power = 3
+set vtx_freq = 5865
 set vcd_video_system = NTSC
 set frsky_spi_tx_id = 70,92
 set frsky_spi_offset = -31

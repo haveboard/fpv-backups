@@ -1,4 +1,4 @@
-DUMP
+dump
 
 # version
 # EmuFlight / MATEKF411RX (M41R) 0.3.3 Jan 10 2021 / 18:47:26 (467b20241) MSP API: 1.50
@@ -650,11 +650,11 @@ set debug_mode = NONE
 set rate_6pos_switch = OFF
 set cpu_overclock = OFF
 set pwr_on_arm_grace = 5
-set vtx_band = 4
+set vtx_band = 1
 set vtx_channel = 1
-set vtx_power = 1
+set vtx_power = 3
 set vtx_low_power_disarm = OFF
-set vtx_freq = 5740
+set vtx_freq = 5865
 set vtx_pit_mode_freq = 0
 set vtx_halfduplex = ON
 set vcd_video_system = NTSC
