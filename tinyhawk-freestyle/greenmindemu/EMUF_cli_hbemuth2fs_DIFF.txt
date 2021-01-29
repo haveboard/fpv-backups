@@ -1,0 +1,142 @@
+DIFF
+
+# version
+# EmuFlight / MATEKF411RX (M41R) 0.3.3 Jan 10 2021 / 18:47:26 (467b20241) MSP API: 1.50
+
+board_name 
+manufacturer_id 
+
+# name
+name hbemuth2fs
+
+# resources
+resource MOTOR 1 B06
+resource MOTOR 2 B08
+resource MOTOR 3 B10
+resource MOTOR 4 B07
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature -AIRMODE
+
+# beeper
+beeper -GYRO_CALIBRATED
+beeper -ARMING_GPS_FIX
+beeper -GPS_STATUS
+beeper -ACC_CALIBRATION
+beeper -ACC_CALIBRATION_FAIL
+beeper -READY_BEEP
+beeper -DISARM_REPEAT
+beeper -ARMED
+beeper -ON_USB
+beeper -BLACKBOX_ERASE
+beeper -CAM_CONNECTION_OPEN
+beeper -CAM_CONNECTION_CLOSED
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# map
+map TAER1234
+
+# serial
+serial 1 2048 115200 57600 0 115200
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 2 1300 1700 0 0
+aux 1 2 1 900 1300 0 0
+aux 2 13 0 1700 2100 0 0
+aux 3 19 3 1300 1700 0 0
+aux 4 28 1 900 1700 0 0
+aux 5 35 3 1700 2100 0 0
+
+# adjrange
+
+# rxrange
+
+# vtx
+
+# rxfail
+
+# master
+set gyro_lowpass_hz_roll = 210
+set gyro_lowpass_hz_pitch = 210
+set gyro_lowpass_hz_yaw = 180
+set imuf_roll_q = 7000
+set imuf_pitch_q = 7000
+set imuf_yaw_q = 7000
+set imuf_w = 16
+set imuf_sharpness = 4000
+set acc_calibration = -19,-61,5
+set rx_spi_protocol = FRSKY_D
+set align_board_yaw = 90
+set vbat_max_cell_voltage = 50
+set vbat_min_cell_voltage = 30
+set vbat_warning_cell_voltage = 33
+set osd_vbat_pos = 2048
+set osd_rssi_pos = 2075
+set osd_flymode_pos = 2458
+set osd_vtx_channel_pos = 2432
+set osd_crosshairs_pos = 2253
+set osd_craft_name_pos = 2442
+set osd_avg_cell_voltage_pos = 2080
+set vcd_video_system = NTSC
+set frsky_spi_tx_id = 70,92
+set frsky_spi_offset = -31
+set frsky_spi_bind_hop_data = 2,127,17,142,32,157,49,172,62,187,77,202,92,217,107,232,122,12,137,27,152,42,167,57,182,72,197,87,212,102,227,117,7,132,22,147,37,162,52,179,67,192,82,207,97,222,112,0,0,0
+
+# profile
+profile 0
+
+set dterm_lowpass_hz_roll = 220
+set dterm_lowpass_hz_pitch = 220
+set dterm_lowpass_hz_yaw = 200
+set dterm_lowpass2_hz_roll = 0
+set dterm_lowpass2_hz_pitch = 0
+set dterm_lowpass2_hz_yaw = 0
+set witchcraft_roll = 0
+set witchcraft_pitch = 0
+set spa_roll_p = 100
+set spa_roll_i = 100
+set spa_roll_d = 100
+set spa_pitch_p = 100
+set spa_pitch_i = 100
+set spa_pitch_d = 100
+set spa_yaw_p = 100
+set spa_yaw_i = 100
+set spa_yaw_d = 100
+set feathered_pids = 0
+set i_decay = 5
+set emu_boost = 150
+set emu_boost_yaw = 210
+set emu_boost_limit = 50
+set emu_boost_limit_yaw = 50
+set p_pitch = 64
+set i_pitch = 60
+set d_pitch = 34
+set p_roll = 63
+set i_roll = 60
+set d_roll = 34
+set p_yaw = 80
+
+# rateprofile
+rateprofile 3
+
+set tpa_rate_p = 60
+set tpa_rate_i = 120
+set tpa_rate_d = 70
+
+# 
